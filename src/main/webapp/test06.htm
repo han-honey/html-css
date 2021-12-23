@@ -1,0 +1,103 @@
+﻿<html>
+ <head>
+  <title>a로 링크 걸기</title>
+ </head>
+ <body>
+<hr>
+<nav>
+ <a href="test06.htm">link-1</a>
+ <a href="test06-1.htm">link-2</a>
+</nav>
+
+<h1>a로 링크 걸기</h1>
+<p>
+ &lt;a href="이동할 경로(주소)"&gt; ... &lt;/a&gt; <br>
+
+  1.절대경로 - 항상 고정된 경로(주소). <br>
+  2.상대경로 - 웹문서의 위치를 기준으로 설정되는 경로. <br><br>
+
+  링크가 걸린 텍스트는 아래의 특징을 가짐 (브라우저 기본설정)  <br>
+  밑줄이 생김, 마우스오버시 커서의 모양이 손모양으로 변경, 텍스트 색상 변경. <br>
+  ( 초기 링크 - 파랑 / 방문한 링크 - 보라 / 활성화 링크 - 빨강 )
+</p>
+
+<h4 id="tit">title="..." 속성</h4>
+<p>
+  어떤 태그에 툴팁(풍선도움말)을 지정할 수 있다.(주로 링크나 이미지에 사용) <br>
+ <a href="https://www.daum.net/" title="daum으로 이동">text</a>
+ <a href="https://www.naver.com/">naver</a>
+</p>
+
+<h3>target속성으로 링크 여는 방식 지정하기</h3>
+<ul>
+ <li>target="_self" (기본값) 현재 위치에 그대로 링크가 열림</li>
+ <li><b>target="_blank" 링크가 새탭</b>에서 열림 <br>
+  <a href="https://www.w3schools.com/" target="_blank">
+   https://www.w3schools.com/</a>
+ </li>
+ <li>target="_top" 프레임구조에서 나뉨없이 전체에 하나로 링크가 열림</li>
+ <li>target="_parent" 한단계 상위창에 링크가 열림</li>
+</ul> <!-- 절대경로 이미지 넣기부터 ~~~~ -->
+
+
+<h3>1. 상대경로로 웹문서(*.htm/*.html) 링크 걸기</h3>
+<a href="test05.htm">이미지수업보기</a>
+<a href="test04.htm">table수업보기</a>
+
+<h3>2. 상대경로로 이미지(*.gif/*.jpg/*.png) 링크 걸기</h3>
+ <a href="img/bear.jpg">곰돌이사진</a>
+ <a href="img/png/arrow-up.png">화살표사진</a>
+ 
+<a href="img/high.jpg">
+ <img src="img/high.jpg" width="50" alt="notebook"></a>
+
+<h3>3. 상대경로로 동영상(*.mp4/*.ogg/*.webm) 링크 걸기</h3>
+ <a href="img/trees.mp4">힐링영상</a>
+
+<h3>4. 상대경로로 text파일(*.txt) 링크 걸기</h3>
+<a href="text.txt">코로나관련</a>
+
+<h3>+ 브라우저가 지원불가한 파일(*.zip/*.hwp/...) 링크 걸기</h3>
+<a href="img.zip">이미지압축파일</a> => 다운로드 됨.
+
+<h3>5. 절대경로로 외부사이트(URL) 링크 걸기</h3>
+ 무료이미지 사이트
+ <ol>
+  <li>픽사베이
+(<a href="https://pixabay.com/" target="_blank">https://pixabay.com/</a>)
+  </li>
+  <li>펙셀스
+  (<a href="https://www.pexels.com/" target="_blank">https://www.pexels.com/</a>)</li>
+  <li>모그파일
+  (<a href="https://morguefile.com/" target="_blank">https://morguefile.com/</a>)</li>
+ </ol>
+
+<hr>
+<h2>email 링크 걸기</h2>
+<p>
+ <b>mailto:email주소</b> <br>
+ <a href="mailto:class@itwillbs.co.kr">email</a>
+
+ <a href="mailto:class@itwillbs.co.kr">class@itwillbs.co.kr</a>
+
+ <a href="mailto:class@itwillbs.co.kr"
+  title="class@itwillbs.co.kr로 이메일보내기">
+  <img src="img/png/mail01.png" width="50"></a>
+</p>
+
+<hr>
+<h2>페이지 최상단으로 이동하는 링크 걸기(임시링크) - #</h2>
+ <a href="#">top</a>
+
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,152 @@
+<html>
+ <head>
+  <title>form-1</title>
+ </head>
+ <body> 
+<nav>
+ <a href="form1.html">form-1</a>
+ <a href="form2.html">form-2</a>
+</nav>
+<hr>
+<h1>form-1</h1>
+<form action="test.jsp" method="post">
+ <hr> 
+<h2>input type="submit/reset/button" 전송/취소/일반 버튼</h2>
+ <label> ID <input type="text"></label>
+ <input type="submit" value="OK">
+ <input type="reset" value="NO"> <br>
+ <input type="button" value="Button" onclick="alert('Why~~')"> 
+ <hr>
+<h2>button (type="reset/button") ... /button </h2>
+ <p>기본이 전송용 버튼. (취소/일반) 버튼으로 변경 가능.<br>
+   시작과 종료 태그 사이에 다른 태그 적용가능.
+   (글자 꾸미기, 이미지 넣기, 웹아이콘 넣기 등)<br>
+  <button>OK</button>
+  <button type="reset">NO</button> <br>
+  <button type="button"><b>click</b></button>
+  <button type="button">
+   <img src="img/gif/aniyellow.gif">click</button>  
+ </p>
+
+ <hr>
+<h2>input요소의 설명문 - label </h2>
+ <p>input의 설명으로 지정한 텍스트는 label태그로 표시.<br>
+  <b>label의 for값</b>과 
+  <b>input의 id값을 서로 일치</b> 시켜주어 연결함. <br>
+ <label for="nm">name</label> <input type="text" id="nm">
+ <label>id <input type="text"></label>
+  <!-- input이 label안에 속해 있으면 바로 연결 됨-->
+ </p>
+ 
+<hr>
+ <h2>textarea ... /textarea - 큰 글상자</h2>
+ <textarea cols="50" rows="5">자기소개
+  가로 크기는 cols="n", 세로 크기는 rows="n"
+ </textarea>
+
+<hr>
+ <h2>select ... /select - (공간절약형 객관식) 드롭다운리스트</h2>
+ <p>select로 전체를 묶어주고 선택값은 option으로 지정함</p> 
+ <p>상담을 원하는 시간은?
+ <select>
+  <option>1교시</option>
+  <option>2교시</option>
+  <option>3교시</option>
+  <option>4교시</option>
+  <option>5교시</option>
+  <option>6교시</option>
+  <option>7교시</option>
+  <option>8교시</option>
+ </select>
+ </p>
+<h3>select size="n"으로 n개의 항목이 보이는 상자형 지정</h3>
+<p>복습이 필요한 과목은?
+ <select size="5">
+  <option>web</option>
+  <option>jsp</option>
+  <option>java</option>
+  <option>DB</option> 
+  <option>job</option>
+  <option>andriod</option>
+  <option>oracle</option>
+ </select>
+</p>
+
+<h3>특정 option에 selected로 초기값으로 지정</h3>
+<p>복습이 필요한 과목은?
+ <select>
+  <option>web</option>
+  <option>jsp</option>
+  <option>java</option>
+  <option selected>DB</option> 
+  <option>job</option>
+  <option>andriod</option>
+  <option>oracle</option>
+ </select>
+ <select size="4">
+  <option>web</option>
+  <option>jsp</option>
+  <option selected>java</option>
+  <option>DB</option> 
+  <option>job</option>
+  <option>andriod</option>
+  <option>oracle</option>
+ </select>
+</p>
+
+<h3>select에 multiple로 다중선택 가능하게 지정</h3>
+<p>ctrl나 shift키로 다중선택 가능 (상자형)</p>
+<p>복습이 필요한 과목은?
+ <select multiple>
+  <option>web</option>
+  <option selected="selected">jsp</option>
+  <option selected>java</option>
+  <option>DB</option> 
+  <option>job</option>
+  <option>andriod</option>
+  <option>oracle</option>
+ </select>
+</p>
+
+<h3>optgroup label - 주제에 따라 항목들을 그룹화하여 지정.</h3>
+<p>option들을 optgroup으로 묶어주고 해당 그룹의 제목(주제)을 label로 지정. </p>
+ <p>상담을 원하는 시간은?
+ <select>
+  <optgroup label="오전">
+   <option>1교시</option>
+   <option>2교시</option>
+   <option>3교시</option>
+   <option>4교시</option>
+  </optgroup>
+  <optgroup label="오후">
+   <option>5교시</option>
+   <option>6교시</option>
+   <option>7교시</option>
+   <option>8교시</option>
+  </optgroup>
+ </select>
+ </p>
+
+<hr>
+<h2>input type="image" 전송용 이미지</h2>
+ <p>src="이미지경로" 속성으로 해당 이미지를 불러옴</p>
+ <label for="nm1">Name</label> <input type="text" id="nm1">
+<input type="image" src="img/png/arrow-up.png" width="50">
+
+<input type="image" src="img/img_submit.gif">
+
+
+
+
+</form>
+
+ </body>
+</html>
+
+
+
+
+
+
+
+

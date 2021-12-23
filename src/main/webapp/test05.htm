@@ -1,0 +1,73 @@
+﻿<html>
+ <head>
+  <title>img로 이미지 넣기</title>
+ </head>
+ <body>
+<hr>
+<h1>img로 이미지 넣기</h1>
+&lt;img src="이미지경로" alt="이미지 대체 텍스트"&gt;
+
+ <h2>필수 속성들</h2>
+ <ul>
+  <li>src(이미지경로) - 실제 이미지가 있는 위치와 파일명</li>
+  <li>alt(이미지 대체 텍스트) 
+  - 이미지가 나타나지 않는 경우를 대비한 설명문, <br>
+    시각장애인용 음성낭독기에서 필요한 설명문.
+  </li>
+ </ul>
+ 
+<img src="table-test2.png" alt="table-test2" width="300">
+
+<h2>경로</h2>
+ <ul>
+  <li>절대경로 - 항상 고정된 경로(주소)</li>
+  <li>상대경로 - 웹문서의 위치를 기준으로 설정되는 경로 <br> 
+   상위폴더의 경우 이동 횟수만큼 ../를 파일명 앞에 추가,<br> 
+   하위폴더의 경우 해당 하위폴더명/파일명 의 형식으로 지정.
+  </li>
+ </ul>
+
+ *절대경로로 이미지 지정
+  <img src="https://www.w3schools.com/images/colorpicker.gif" alt="colorpicker">
+<img src="https://www.w3schools.com/images/w3lynx_200.png" alt="banner">
+
+
+<hr>
+ *상대경로로 이미지 지정
+<img src="img/man.jpg" alt="man">
+<img src="img/cat.jpg" alt="cat">
+<img src="img/png/monster.png" alt="monster">
+<img src="../pic_trulli.jpg" alt="trulli">
+<img src="../img2/img_girl.jpg" alt="girl?">
+
+<h3>웹에서 사용하는 대표 이미지 파일형식의 특징</h3>
+ <ul>
+  <li>*.gif - 최대 256가지 색상 표현가능. 투명배경 지원, 움짤 가능
+   (로고나 버튼, 아이콘 등 단순한 이미지에 적합)
+  </li>
+  <li>*.jpg - 트루컬러 표현가능. (실사사진에 적합)</li>
+  <li>*.png - 트루컬러 표현가능, 투명배경 지원.
+  (위의 두가지 형식의 장점을 결합, 모두 적합)</li>
+ </ul>
+
+<h3> 이미지 크기 지정 속성 - width/height="n" </h3>
+<p>
+ 1. width="300" 지정 <br>
+ <img src="img/man.jpg" alt="man" width="300"><br>
+ 2. height="300" 지정 <br>
+ <img src="img/man.jpg" alt="man" height="300"><br>
+ 3. width="300" height="300" 지정 <br>
+ <img src="img/man.jpg" alt="man" width="300" height="300"><br>
+
+ *원본 크기대로 적용시에도 width와 height값을 적어주면 이미지가 빨리 뜸
+  (특히 이미지 크기가 큰 경우 유용)
+</p>
+
+ </body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>iframe</title>
+</head>
+<body>
+<h1>iframe</h1>
+<p>
+&lt;iframe src="..." width="n" height="n"&gt; ... &lt;/iframe&gt; <br>
+src속성으로 iframe안에 보여질 내용을 지정하고 width로 가로 크기, height로 세로 크기<br>
+(src로 가능한 것은 브라우저가 지원가능한 종류. URL,웹문서,이미지,동영상,text파일) <br><br>
+
+<i>* iframe시작과 종료태그 사이에는 iframe을 지원하지 않는 브라우저 사용자용 메세지를 넣음.</i>
+</p>
+
+<h2>URL</h2>
+<iframe src="https://www.itwillbs.co.kr/">
+ iframe을 지원하지 않는 브라우저 사용자용 메세지</iframe>
+
+<h2>웹문서</h2>
+<iframe src="form2.html" width="800" height="600"></iframe>
+
+<h2>이미지</h2>
+<iframe src="img/img_submit.gif"></iframe>
+
+<h2>동영상</h2>
+<iframe src="img/trees.mp4"></iframe>
+
+<h2>text파일</h2>
+<iframe src="itwillbs.txt"></iframe>
+
+<hr>
+<h3>iframe 안에 링크 열기</h3>
+<p>
+&lt;iframe <b>name="abc"</b>&gt; ... &lt;/iframe&gt;  <br>
+&lt;a href="링크경로" <b>target="abc"</b>&gt; ... &lt;/a&gt;<br>
+ - iframe의 name값과 a의 target값을 서로 일치시킴
+
+</p>
+<iframe width="800" height="400" name="if-box01"></iframe>
+<nav>
+ <a href="test.html" target="if-box01">메뉴1</a>
+ <a href="form1.html" target="if-box01">메뉴2</a>
+ <a href="form2.html" target="if-box01">메뉴3</a>
+</nav>
+	
+<iframe width="500" height="400" name="ifbox"></iframe>
+<nav>
+ <a href="form1.html" target="ifbox">menu01</a>
+ <a href="form2.html" target="ifbox">menu02</a>
+</nav>	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
